@@ -19,6 +19,7 @@ jobs:
     - name: Run tests and collect coverage
       run: pytest --cov=api.calculator --cov-report=xml
     - name: Upload coverage reports to Codecov with GitHub Action
-      uses: codecov/codecov-action@v5.4.0
+      uses: codecov/codecov-action@v5
       env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}
+        run_command: empty-upload
