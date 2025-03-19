@@ -2,8 +2,9 @@ coverage:
   status:
     project:
       default:   # default is the status check's name, not default settings
-        target: 100 
-        threshold: 1
+        target: 100% 
+        threshold: 1%
+        base: auto
         
 comment:                  #this is a top-level key
   layout: " diff, flags, files"
